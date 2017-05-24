@@ -1,0 +1,97 @@
+<--重置样式-->
+*{
+	margin: 0;
+	padding: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #ca141d;
+}
+img{
+	display: block;
+	border: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+	min-width:1200px;
+	overflow-x:auto;
+}
+#ad{
+	min-width: 1200px;
+	position:relative;
+}
+#ad img{
+	width:100%;
+	margin: 0 auto;
+}
+#ad span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	font-size: 16px;
+	color: white;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: black;
+	opacity: .3;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+}
+#top{
+	min-width: 1200px;
+	height: 31px;
+	background-color: #fafafa;
+	line-height: 31px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #eaeaea;
+    position: relative;
+}
+#top .top-con{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+#top .top-con:before{
+	content: "";
+	display: block;
+}
+#top .top-con:after{
+	content: "";
+	display: block;
+}
+#top .tc-left{
+	float: left;
+
+}
+/*#top .tc-left ul{
+	width: 490px;
+	height: 100%;
+}*/
+#top .tc-left li:first-child{
+	padding-left: 0;
+	background-image: none;
+}
+#top .tc-left li{
+	float: left;
+	padding: 0 8px;
+	background: url(../img/navli_bg.png) no-repeat;
+	background-position: 0 9px;
+}
+#top .tc-left li a{
+	font-size: 12px;
+	color: #a4a4a4;
+	cursor: pointer;
+}
+#top .tc-left li a:hover{
+	color: #ca141d;;
+}
+

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="icon" href="img/title_logo.jpg" type="image/x-icon">
+		<link rel="stylesheet" href="css/productlist.css" />
+		<script src="js/productlist.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--
+        	作者：302701088@qq.com
+        	时间：2017-05-24
+        	描述：top部分
+        -->
+		<div id="top">
+			<div class="top-con">
+				<div class="tc-left">
+					<ul>
+						<li>
+							<a href="http://consumer.huawei.com/cn/" target="_blank">华为官网</a>
+						</li>
+						<li>
+							<a href="http://consumer.huawei.com/cn/" target="_blank">荣耀官网</a>
+						</li>
+						<li class="appsoft">
+							<div class="a-top">
+								<a href="http://consumer.huawei.com/cn/" target="_blank">软件应用</a>
+								<span></span>
+							</div>
+							<div class="a-bottom">
+								<p>
+									<a href="http://consumer.huawei.com/cn/">EMUL</a>
+								</p>
+								<p>
+									<a href="http://consumer.huawei.com/cn/">应用市场</a>
+								</p>
+								<p>
+									<a href="http://consumer.huawei.com/cn/">云服务</a>
+								</p>
+								<p>
+									<a href="http://consumer.huawei.com/cn/">开发者联盟</a>
+								</p>
+							</div>
+						</li>
+						<li>
+							<a href="http://consumer.huawei.com/cn/" target="_blank">花粉俱乐部</a>
+						</li>
+						<li>
+							<a href="http://consumer.huawei.com/cn/" target="_blank">Select Region</a>
+						</li>
+						<li>
+							<a href="http://consumer.huawei.com/cn/" target="_blank">V码(优购码)</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tc-right">
+					<ul>
+						<li class="phone_code">
+							<div class="p-top">
+								<a href="">手机版</a>
+								<span></span>
+							</div>
+							<div class="p-bottom">
+								<div style="border-bottom: 1px solid #eaeaea;" class="qrcode">
+									<div class="q-left">
+										<img src="img/qrcode.png" />
+									</div>
+									<div class="q-right">
+										<p>手机版</p>
+										<a href="https://www.vmall.com/appdownload">专享无线优惠</a>
+									</div>
+								</div>
+								<div class="qrcode">
+									<div class="q-left">
+										<img src="img/qrcode1.png" />
+									</div>
+									<div class="q-right">
+										<p>微信公众号</p>
+										<a href="https://www.vmall.com/appdownload">微信扫码关注我们</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="more_info">
+							<div class="m-top">
+								<a href="">更多精彩</a>
+								<span></span>
+							</div>
+							<div class="m-bottom">
+								<p>
+									<a href="http://consumer.huawei.com/cn/">帮助中心</a>
+								</p>
+								<p>
+									<a href="http://consumer.huawei.com/cn/">数字音乐</a>
+								</p>
+								<p>
+									<a href="http://consumer.huawei.com/cn/">爱旅</a>
+								</p>
+								<p>
+									<a href="http://consumer.huawei.com/cn/">PC软件</a>
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：302701088@qq.com
+        	时间：2017-05-24
+        	描述：header部分
+        -->
+		<div id="header">
+			<div class="h-con">
+				<div class="logo">
+					<a href="" title="Vmall.com—华为商城">
+						<img src="img/logo.png" alt="Vmall.com—华为商城" />
+					</a>
+				</div>
+				<div class="hc-login">
+					<div class="hc-login-a">
+						<a href="login.html">登录</a>
+						<span>|</span>
+						<a href="register.html">注册</a>
+					</div>
+				</div>
+				<div class="cart-box">
+					<div class="cart">
+						<a href="cart.html">
+							<span></span>
+							<i class="cart-num">0</i>
+						</a>
+					</div>
+					<div class="cart-hide">
+						<!--<img class="hide" src="img/cart.png" />
+						<p class="hide">您的购物车是空的，赶紧选购吧！</p>-->
+					</div>
+				</div>
+				<div class="search-form">
+					<form action="" method="post">
+						<input type="text" class="text" />
+						<input type="button" class="btn" />
+					</form>
+					<div class="keyword">
+						<a href="">HUAWEI P10</a>
+						<a href="">荣耀V9</a>
+						<a href="">荣耀8 青春版</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：302701088@qq.com
+        	时间：2017-05-24
+        	描述：nav部分
+        -->
+		<div id="nav">
+			<div id="nav-con">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="https://www.vmall.com/huawei">华为专区</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/cjryr525.html">超级荣耀日</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/p10.html">HUAWEI P10</a>
+					</li>
+					<li>
+						<a href="https://www.vmall.com/product/738677717.html">荣耀 V9</a>
+					</li>
+					<li>
+						<a href="https://sale.vmall.com/huaweimate9xiliezc.html">HUAWEI Mate9</a>
+					</li>
+					<li>
+						<a href="https://mm.vmall.com/rycw6a.html">荣耀畅玩 6A</a>
+					</li>
+				</ul>
+				<div class="nav-product">
+					<h2>全部商品</h2>
+					<ul class="product-list" style="display: none;">
+						<li>
+							<div>
+								<h3><a>手机</a></h3>
+								<a>荣耀</a>
+								<a>HUAWEI P 系列</a>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3><a>笔记本&平板</a></h3>
+								<a>平板电脑</a>
+								<a>笔记本电脑</a>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3><a>穿戴</a></h3>
+								<a>手环</a>
+								<a>手表</a>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3><a>智能家居</a></h3>
+								<a>子母路由</a>
+								<a>电视盒子</a>
+								<a>路由器</a>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3><a>通用配件</a></h3>
+								<a>移动电源</a>
+								<a>耳机</a>
+								<a>音箱</a>
+								<span></span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<h3><a>专属配件</a></h3>
+								<a>保护壳</a>
+								<a>保护套</a>
+								<a>贴膜</a>
+								<span></span>
+							</div>
+						</li>
+						<!-- 隐藏列表1  -->
+						<div class="list-hide" id="list-hide0">
+							<div class="lh-title">
+								<a>
+									<span>浏览手机频道</span>
+									<span style="float: right;">></span>
+								</a>
+							</div>
+							<ul class="lh-name">
+								<li>
+									<a>荣耀</a>
+								</li>
+								<li>
+									<a>HUAWEI P系列</a>
+								</li>
+								<li>
+									<a>畅玩</a>
+								</li>
+								<li>
+									<a>HUAWEI MATE系列</a>
+								</li>
+								<li>
+									<a>HUAWEI nova系列</a>
+								</li>
+								<li>
+									<a>华为 G系列</a>
+								</li>
+								<li>
+									<a>华为畅享系列</a>
+								</li>
+								<li>
+									<a>合约机</a>
+								</li>
+							</ul>
+							<div class="lh-img">
+								<ul>
+									<li>
+										<img src="img/banner_phones/banner_phones1.jpg" />
+										<h3>HUAWEI P10</h3>
+										<p>￥4288</p>
+									</li>
+									<li>
+										<img src="img/banner_phones/banner_phones2.jpg" />
+										<h3>荣耀8青春版</h3>
+										<p>￥1099</p>
+									</li>
+									<li>
+										<img src="img/banner_phones/banner_phones3.jpg" />
+										<h3>HUAWEI Mate 9</h3>
+										<p>￥3899</p>
+									</li>
+									<li style="border-right: none;">
+										<img src="img/banner_phones/banner_phones4.jpg" />
+										<h3>荣耀V9</h3>
+										<p>￥2599</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 隐藏列表2  -->
+						<div class="list-hide" id="list-hide1">
+							<div class="lh-title">
+								<a>
+									<span>浏览笔记本&平板频道</span>
+									<span style="float: right;">></span>
+								</a>
+							</div>
+							<ul class="lh-name">
+								<li>
+									<a>平板电脑</a>
+								</li>
+								<li>
+									<a>笔记本电脑</a>
+								</li>
+							</ul>
+							<div class="lh-img">
+								<ul>
+									<li>
+										<img src="img/banner_pads/banner_pads1.jpg" />
+										<h3>荣耀平板2</h3>
+										<p>￥998</p>
+									</li>
+									<li>
+										<img src="img/banner_pads/banner_pads2.jpg" />
+										<h3>华为平板 M3</h3>
+										<p>￥1888</p>
+									</li>
+									<li>
+										<img src="img/banner_pads/banner_pads3.jpg" />
+										<h3>荣耀畅玩平板note</h3>
+										<p>￥999</p>
+									</li>
+									<li style="border-right: none;">
+										<img src="img/banner_pads/banner_pads4.jpg" />
+										<h3>HUAWEI<br/>MateBook</h3>
+										<p>￥4488</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 隐藏列表3  -->
+						<div class="list-hide" id="list-hide2">
+							<div class="lh-title">
+								<a>
+									<span>浏览穿戴频道</span>
+									<span style="float: right;">></span>
+								</a>
+							</div>
+							<ul class="lh-name">
+								<li>
+									<a>手环</a>
+								</li>
+								<li>
+									<a>手表</a>
+								</li>
+							</ul>
+							<div class="lh-img">
+								<ul>
+									<li>
+										<img src="img/banner_wears/banner_wears1.jpg" />
+										<h3>HUAWEI WATCH 2</h3>
+										<p>￥1988</p>
+									</li>
+									<li>
+										<img src="img/banner_wears/banner_wears2.jpg" />
+										<h3>荣耀手表S1</h3>
+										<p>￥599</p>
+									</li>
+									<li>
+										<img src="img/banner_wears/banner_wears3.jpg" />
+										<h3>华为手环 B3</h3>
+										<p>￥999</p>
+									</li>
+									<li style="border-right: none;">
+										<img src="img/banner_wears/banner_wears4.jpg" />
+										<h3>荣耀手环 zero</h3>
+										<p>￥299</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 隐藏列表4  -->
+						<div class="list-hide" id="list-hide3">
+							<div class="lh-title">
+								<a>
+									<span>浏览智能家居频道</span>
+									<span style="float: right;">></span>
+								</a>
+							</div>
+							<ul class="lh-name">
+								<li>
+									<a>子母路由</a>
+								</li>
+								<li>
+									<a>电视盒子</a>
+								</li>
+								<li>
+									<a>路由器</a>
+								</li>
+								<li>
+									<a>电力猫</a>
+								</li>
+								<li>
+									<a>随行WiFi</a>
+								</li>
+								<li>
+									<a>HUAWEI HiLink生态产品</a>
+								</li>
+							</ul>
+							<div class="lh-img">
+								<ul>
+									<li>
+										<img src="img/banner_homes/banner_homes1.jpg" />
+										<h3>华为路由 Q1</h3>
+										<p>￥599</p>
+									</li>
+									<li>
+										<img src="img/banner_homes/banner_homes2.jpg" />
+										<h3>荣耀盒子Pro</h3>
+										<p>￥439</p>
+									</li>
+									<li>
+										<img src="img/banner_homes/banner_homes3.jpg" />
+										<h3>华为路由A1 Lite</h3>
+										<p>￥169</p>
+									</li>
+									<li style="border-right: none;">
+										<img src="img/banner_homes/banner_homes4.jpg" />
+										<h3>荣耀路由Pro</h3>
+										<p>￥315</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 隐藏列表5  -->
+						<div class="list-hide" id="list-hide4">
+							<div class="lh-title">
+								<a>
+									<span>浏览通用配件频道</span>
+									<span style="float: right;">></span>
+								</a>
+							</div>
+							<ul class="lh-name">
+								<li>
+									<a>移动电源</a>
+								</li>
+								<li>
+									<a>耳机</a>
+								</li>
+								<li>
+									<a>音箱</a>
+								</li>
+								<li>
+									<a>自拍杆/支架</a>
+								</li>
+								<li>
+									<a>充电器/线材</a>
+								</li>
+								<li>
+									<a>U盘/存储卡</a>
+								</li>
+								<li>
+									<a>排插</a>
+								</li>
+								<li>
+									<a>摄像机/镜头</a>
+								</li>
+								<li>
+									<a>智能硬件</a>
+								</li>
+								<li>
+									<a>生活周边</a>
+								</li>
+							</ul>
+							<div class="lh-img">
+								<ul>
+									<li>
+										<img src="img/1.jpg" />
+										<h3>H华为10000mAh移动电源 充电宝</h3>
+										<p>￥199</p>
+									</li>
+									<li>
+										<img src="img/2.jpg" />
+										<h3>荣耀运动蓝牙耳机</h3>
+										<p>￥299</p>
+									</li>
+									<li>
+										<img src="img/3.jpg" />
+										<h3>(热门配件)荣耀三脚架自拍杆无线版</h3>
+										<p>￥119</p>
+									</li>
+									<li style="border-right: none;">
+										<img src="img/4.jpg" />
+										<h3>闪迪 高速TF存储卡</h3>
+										<p>￥90</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- 隐藏列表6  -->
+						<div class="list-hide" id="list-hide5">
+							<div class="lh-title">
+								<a>
+									<span>浏览专属配件频道</span>
+									<span style="float: right;">></span>
+								</a>
+							</div>
+							<ul class="lh-name">
+								<li>
+									<a>保护壳</a>
+								</li>
+								<li>
+									<a>保护套</a>
+								</li>
+								<li>
+									<a>贴膜</a>
+								</li>
+								<li>
+									<a>盒子专属配件</a>
+								</li>
+								<li>
+									<a>表带</a>
+								</li>
+							</ul>
+							<div class="lh-img">
+								<ul>
+									<li>
+										<img src="img/banner_specials/banner_specials1.jpg" />
+										<h3>HUAWEI VR</h3>
+										<p>￥599</p>
+									</li>
+									<li>
+										<img src="img/banner_specials/banner_specials2.jpg" />
+										<h3>荣耀VR全景相机</h3>
+										<p>￥699</p>
+									</li>
+									<li>
+										<img src="img/banner_specials/banner_specials3.jpg" />
+										<h3>荣耀畅玩6X 翻盖保护盘皮套</h3>
+										<p>￥129</p>
+									</li>
+									<li style="border-right: none;">
+										<img src="img/banner_specials/banner_specials4.jpg" />
+										<h3>HUAWEI Mate 9 皮套</h3>
+										<p>￥229</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="main-list">
+			<ul id="lists">
+			</ul>
+		</div>
+		<script type="text/javascript">
+			function getCookie(name) {
+				var strCookie = document.cookie;
+				var arrCookie = strCookie.split("; ");
+				for(var i in arrCookie) {
+					arr = arrCookie[i].split("=");
+					if(name == arr[0]) {
+						return arr[1];
+					}
+				}
+			}
+
+			function setCookie(name, val, day) {
+				var oDate = new Date();
+				oDate.setDate(oDate.getDate() + 10);
+				document.cookie = name + "=" + val + ";expires=" + oDate;
+			}
+
+			function removeCookie(name) {
+				setCookie(name, 1, -1);
+			}
+			var oUl = document.getElementById("lists");
+			var aLi = oUl.getElementsByTagName("li");
+			var oNum = document.getElementsByClassName("cart-num")[0];
+			var aBtn = document.getElementsByClassName("btn");
+			//后台返回的数据，这些数据在数据库中存放
+			var data = {
+				"10001": {
+					"id": "10001",
+					"title": "HUAWEI Mate 9 保时捷设计 6GB+256GB 全网通版（曜石黑）",
+					"price": "8999",
+					"imgUrl": "img/phones/1489241671451.png"
+				},
+				"10002": {
+					"id": "10002",
+					"title": "HUAWEI nova 青春版4GB+64GB 全网通版（樱语粉）",
+					"price": "1999",
+					"imgUrl": "img/phones/428_428_1493110604858mp.jpg"
+				},
+				"10003": {
+					"id": "10003",
+					"title": "HUAWEI nova 活跃版 4GB+64GB 全网通版 （玫瑰金）",
+					"price": "2199",
+					"imgUrl": "img/phones/428_428_1477358143069mp.jpg"
+				},
+				"10004": {
+					"id": "10004",
+					"title": "HUAWEI Mate 9 Pro 4GB+64GB 全网通版（琥珀金）",
+					"price": "4699",
+					"imgUrl": "img/phones/428_428_1480922774554mp.jpg"
+				},
+				"10005": {
+					"id": "10005",
+					"title": "【99元订金】HUAWEI nova 2 Plus 4GB+128GB 全网通版（曜石黑）",
+					"price": "2899",
+					"imgUrl": "img/phones/428_428_1495679157972mp.jpg"
+				},
+				"10006": {
+					"id": "10006",
+					"title": "HUAWEI nova 2 Plus 4GB+128GB 全网通版（极光蓝）",
+					"price": "2899",
+					"imgUrl": "img/phones/428_428_1495436573360mp.jpg"
+				},
+				"10007": {
+					"id": "10007",
+					"title": "【99元订金】HUAWEI nova 2 4GB+64GB 全网通版（玫瑰金）",
+					"price": "2499",
+					"imgUrl": "img/phones/428_428_1495678886037mp.jpg"
+				},
+				"10008": {
+					"id": "10008",
+					"title": "HUAWEI P10 Plus 6GB+64GB 全网通版（曜石黑）",
+					"price": "4388",
+					"imgUrl": "img/phones/428_428_1481881191127mp.jpg"
+				}
+			};
+
+			var html = "";
+			for(var i in data) {
+				//字符串拼接，对于不变的字符直接用引号引起来，对于可变用变量表示
+				//用自定义属性data-id去保存商品ID，方便使用
+				html += "<li><a href='detail.html?id=" + data[i].id + "'><img src='" + data[i].imgUrl + "'></a><p>" + data[i].title + "</p>" +
+					"<p>￥" + data[i].price + "</p><input type='button' value='加入购物车' class='btn' data-id='" + data[i].id + "'></li>"
+
+			}
+			oUl.innerHTML = html;
+
+			var str = getCookie("cart");
+			var obj = str ? JSON.parse(str) : {}; //用来存商品ID（attr）和添加的数量（value）
+
+			var sum = 0;
+			for(var i in obj) {
+				sum += obj[i];
+			}
+
+			oNum.innerHTML = sum;
+			for(var id in obj) {
+				var oCart = document.getElementsByClassName("cart-hide")[0];
+				var oDiv = document.createElement("div");
+				var str = "<img src='" + data[id].imgUrl + "'/><h4>" + data[id].title + "</h4><span>￥" + data[id].price + "<b>X" + obj[id] + "</b></span><a class='closebtn'>X</a>"
+				oDiv.innerHTML = str;
+				oCart.appendChild(oDiv);
+			}
+			var oCart = document.getElementsByClassName("cart-hide")[0];
+			var oP = document.createElement("p");
+			var oDiv = document.createElement("div");
+			var str = "<img src='" + data[id].imgUrl + "'/><h4>" + data[id].title + "</h4><span>￥" + data[id].price + "<b>X" + obj[id] + "</b></span><a class='closebtn'>X</a>"
+			oDiv.innerHTML = str;
+			oCart.appendChild(oDiv);
+			var aDiv = oCart.getElementsByTagName("div");
+			oCart.insertBefore(oDiv, aDiv[0]);
+			var total = 0;
+			for(var id in obj) {
+				total += data[id].price * obj[id];
+			}
+			var str1 = "共<span>" + oNum.innerHTML + "</span>件商品，金额合计<span>" + total + "</span><a>去结算</a>";
+			oP.innerHTML = str1;
+			oCart.appendChild(oP);
+			oCart.insertBefore(oDiv, oP);
+			for(var i = 0; i < aBtn.length; i++) {
+				aBtn[i].onclick = function() {
+					var id = this.getAttribute("data-id");
+
+					obj[id] = obj[id] ? ++obj[id] : 1;
+
+					//存cookie
+
+					var objToStr = JSON.stringify(obj);
+
+					setCookie("cart", objToStr, 7);
+
+					oNum.innerHTML = ++sum;
+					var oDiv = document.createElement("div");
+					var str = "<img src='" + data[id].imgUrl + "'/><h4>" + data[id].title + "</h4><span>￥" + data[id].price + "<b>X" + obj[id] + "</b></span><a class='closebtn'>X</a>"
+					oDiv.innerHTML = str;
+					oCart.appendChild(oDiv);
+					var aDiv = oCart.getElementsByTagName("div");
+					oCart.insertBefore(oDiv, aDiv[0]);
+					var total = 0;
+					for(var id in obj) {
+						total += data[id].price * obj[id];
+					}
+					var str1 = "共<span>" + oNum.innerHTML + "</span>件商品，金额合计<span>" + total + "</span><a>去结算</a>";
+					oP.innerHTML = str1;
+					oCart.appendChild(oP);
+					oCart.insertBefore(oDiv, oP);
+				}
+			}
+			var oInput = document.getElementsByClassName("text")[0],
+				oKeyword = document.getElementsByClassName("keyword")[0];
+			oInput.onfocus = function() {
+				oKeyword.style.display = "none";
+			}
+			oInput.onblur = function() {
+				oKeyword.style.display = "block";
+			}
+		</script>
+
+	</body>
+
+</html>

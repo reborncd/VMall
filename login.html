@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<script type="text/javascript" src="jquery-1.11.0.js" ></script>
+		<link rel="icon" href="img/title_logo.jpg" type="image/x-icon">
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/login.js" ></script>
+	</head>
+
+	<body>
+		<div class="login-con">
+			<div class="header">
+				<div class="header-con">
+					<div class="logo">
+						<img src="img/huaweiLogo.png" />
+					</div>
+					<b class="line">|</b>
+					<b>华为商城</b>
+				</div>
+			</div>
+			<div class="header-center">
+				<div class="hc-left"></div>
+				<div class="hc-right">
+					<div class="title">
+						<h3>欢迎登录华为账号</h3>
+					</div>
+					<div class="login">
+						<div class="login-con">
+							<form name="login" id="login" action="post">
+								<input type="text" placeholder="手机号/邮件地址" name="username" />
+								<span class="zh">！请输入账号</span>
+								<input type="password" placeholder="密码" name="password" />
+								<span class="psw">！请输入密码</span>
+								<div class="code">
+									<input type="text" placeholder="区分大小写" />
+									<span class="codewrong">！验证码错误</span>
+									<img src="img/authCodeImage.png" />
+									<img src="img/chg_image.png" />
+								</div>
+								<div class="tips">
+									<div><input class="radio" type="radio" />&nbsp;记住账号</div>
+									<a href="">忘记密码 ？</a>
+								</div>
+								<input class="btn" type="button" value="登录" />
+								<span class="wrong">!用户名或密码错误</span>
+							</form>
+							<p class="links">
+								<span>第三方账号登录：</span>
+								<span title="QQ" class="pic">&#xe6d3;</span>
+								<span title="支付宝" class="pic">&#xe624;</span>
+								<span title="微信" class="pic">&#xe608;</span>
+							</p>
+							<p class="register">
+								您还没有华为账号吧？&nbsp;
+								<a href="register.html" title="免费注册">免费注册</a>
+							</p>
+							<p class="account">
+								华为帐号适用于访问所有华为服务。您可登录该帐号，访问云服务、华为商城、华为/荣耀官网、花粉俱乐部及更多服务。
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-con">
+				<p>
+					<a href="">华为隐私政策</a>
+					<a href="">华为帐号用户协议</a>
+					<a href="">常见问题</a>
+				</p>
+				<p>Copyright © 2011-2017    华为技术有限公司   版权所有   保留一切权利</p>
+				<p>苏B2-20070200号           |           苏ICP备09062682号-9</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				var $aInput = $("#login").find("input:not(:last)");
+				$(".btn").on("click", function() {
+					if($aInput.eq(0).val().length == 0){
+						alert("用户名不能为空!");
+						return;
+					}
+					if($aInput.eq(2).val()==""){
+						$("span").eq(2).show();
+					}
+					if($aInput.eq(2).val()=="ckw2"){
+						$.post("http://127.0.0.1/VMall/login.php", { "username": $aInput.eq(0).val(), "password": $aInput.eq(1).val() }, function(data) {
+						if(data == 1) {
+							$(".wrong").show();
+						} else {
+							alert("登录成功!");
+							location.href = "index.html";
+						}
+					})
+					}	
+				})
+
+			})
+		</script>
+	</body>
+
+</html>
